@@ -19,6 +19,6 @@ interface IPicture
     
     function delete(Picture $picture);
     
-    function find($haystack, $needle);
+    function find($haystack, $needle, $desc);
 
 }
