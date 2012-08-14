@@ -37,8 +37,8 @@ class ServicePicture extends \Nette\Object implements IPicture {
      * @param type $needle
      * @return array \MongoId 
      */
-    public function find($haystack, $needle) {
-        return $this->mapper->find($haystack, $needle);
+    public function find($haystack, $needle, $desc = 1) {
+        return $this->mapper->find($haystack, $needle, $desc);
     }
 
     /**
