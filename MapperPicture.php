@@ -83,7 +83,7 @@ class MapperPicture extends \Nette\Object {
      * @param type $desc / 1 => true
      * @return array \MongoId
      */
-    public function find($haystack, $needle, $desc = 1) {
+    public function find($haystack, $needle, $desc) {
         $list = array();
         $cursor = $this->collection->find(array( $haystack => $needle ));
         foreach ($cursor as $ob) {
