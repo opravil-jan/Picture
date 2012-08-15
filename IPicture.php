@@ -8,6 +8,7 @@ namespace Picture;
  * @author     Martin Charouzek
  */
 
+
 interface IPicture
 {
 
